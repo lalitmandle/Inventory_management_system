@@ -46,6 +46,23 @@ Commands for adding products, recording sales, creating invoices, etc.
 **1. Clone the Repository:** Clone this repository to your local machine.  
 **2. Install Dependencies:** Install the necessary Python libraries.  
 **3. Run the Application:** Use the CLI to interact with the system and perform various operations like managing inventory, recording sales, and generating invoices.  
+## These are some basic command to run on terminal to check script is working perfectly.  
+###  Add Product: 
+
+> python in_management.py add_product P001 "Laptop" "Electronics" 999.99 10
+### Update Product:  
+> python in_management.py update_product P001 --price 899.99  
+### Remove Product:  
+> python in_management.py remove_product P001  
+### View All Products:  
+> python in_management.py view_all_products
+### Record Sale:  
+> python in_management.py record_sale S001 P001 2 999.99  
+### Record Return:
+> python in_management.py record_return R001 P001 1 999.99 "Defective"
+### Create invoice:
+> python in_management.py create_invoice I001 S001
+
 ## Future Enhancements
 --> Integrate a graphical user interface (GUI) for a more user-friendly experience.  
 --> Implement more advanced features like inventory forecasting and automated report generation.  
